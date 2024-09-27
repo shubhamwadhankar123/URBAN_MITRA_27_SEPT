@@ -103,10 +103,10 @@
                             +91 7666461634
                         </li>
                         <li class="header-top-contact">
-                            <a href="#">sign in</a>
+                            <a href="LOGIN_REGISTRATION_FORM/login.html">sign in</a>
                         </li>
                         <li class="header-top-contact">
-                            <a href="#">register</a>
+                            <a href="LOGIN_REGISTRATION_FORM/register.html">register</a>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +130,6 @@
                         </button>
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/logo/brand-logo.png" alt="Brand Logo" style="height: 40px; display: inline-block; vertical-align: middle;">
-                            <span style="display: inline-block; vertical-align: middle;">Urban<span>Mitra</span></span>
                         </a>
                     </div><!--/.navbar-header-->
                     <!-- End Header Navigation -->
@@ -154,13 +153,14 @@
     </section><!-- /.top-area-->
     <!-- top-area End -->
 
+
 		<!--welcome-hero start -->
 		<section id="home" class="welcome-hero">
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<h2>Everything you need from nearby service providers <br> just a click away!  </h2>
+					<h2>Everything you need from nearby service providers <br> just a click away!</h2>
 					<p>
-						Discover and book local services like water delivery, electricians, carpenters, and more, with full details and ratings, all in one click! 
+						Discover and book local services like water delivery, electricians, carpenters, and more, with full details and ratings, all in one click!
 					</p>
 				</div>
 				<div class="welcome-hero-serch-box">
@@ -168,7 +168,7 @@
 						<div class="single-welcome-hero-form">
 							<h3>what?</h3>
 							<form action="index.html">
-								<input type="text" placeholder="Ex: Water Can Delivery, Vegetable Seller, Electrician, Plumber, Carpenter, Painter, House Cleaning Service, Laundry Service, Grocery Delivery, Tiffin/Meal Delivery, Maid/Househelp, Gardener, Gas Cylinder Delivery, Milk Delivery, Pet Care (Grooming, Walking), Driver on Hire, Mobile Repair Technician, AC Repair & Maintenance, TV/DTH Installation and Repair, Appliance Repair (Fridge, Washing Machine, etc.), Home Tutor, Packers and Movers, Beautician at Home, Barber at Home, Car Wash Service, Bike/Car Mechanic, Waste Collection/Recycler, Courier Pickup Service, Shoe Repair/Cobbler, Tailoring Service, etc" />
+								<input type="text" id="serviceInput" placeholder="Ex: Water Can Delivery, Electrician, Plumber, Carpenter, etc." />
 							</form>
 							<div class="welcome-hero-form-icon">
 								<i class="flaticon-list-with-dots"></i>
@@ -177,8 +177,7 @@
 						<div class="single-welcome-hero-form">
 							<h3>location</h3>
 							<form action="index.html">
-								<input type="text" placeholder="Ex: delhi, mumbai, bangalore, kolkata, chennai, hyderabad, ahmedabad, pune, jaipur, surat, vadodara, ludhiana, kanpur, nagpur, indore, patna, lucknow, chandigarh, agra, bhopal
-								" />
+								<input type="text" id="locationInput" placeholder="Ex: Delhi, Mumbai, Bangalore, etc." />
 							</form>
 							<div class="welcome-hero-form-icon">
 								<i class="flaticon-gps-fixed-indicator"></i>
@@ -186,81 +185,402 @@
 						</div>
 					</div>
 					<div class="welcome-hero-serch">
-						<button class="welcome-hero-btn" onclick="window.location.href='#'">
-							 search  <i data-feather="search"></i> 
+						<button class="welcome-hero-btn">
+							search <i data-feather="search"></i>
 						</button>
 					</div>
 				</div>
 			</div>
-
-		</section><!--/.welcome-hero-->
+		</section>
 		<!--welcome-hero end -->
+	
+		<!--list-topics start -->
+		<section id="list-topics" class="list-topics">
+			<div class="container">
+				<div class="list-topics-content">
+					<ul>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-restaurant"></i>
+								</div>
+								<h2><a href="service-list.html?category=restaurant">Restaurant</a></h2>
+								<p>150 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-travel"></i>
+								</div>
+								<h2><a href="service-list.html?category=destination">Destination</a></h2>
+								<p>214 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-building"></i>
+								</div>
+								<h2><a href="service-list.html?category=hotel">Hotels</a></h2>
+								<p>185 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-heartbeat"></i> <!-- Healthcare Service -->
+								</div>
+								<h2><a href="service-list.html?category=healthcare">Healthcare</a></h2>
+								<p>200 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-transport"></i>
+								</div>
+								<h2><a href="service-list.html?category=automotive">Automotive</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-pills"></i>
+								</div>
+								<h2><a href="service-list.html?category=medical service">Medical Service</a></h2>
+								<p>200 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+									<i class="fas fa-tv"></i> <!-- FontAwesome TV icon -->
+								</div>
+								<h2><a href="service-list.html?category=automotive">Automotive</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-water"></i> <!-- Water Can Delivery -->
+								</div>
+								<h2><a href="service-list.html?category=Water Can Delivery">Water Can Delivery</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-carrot"></i> <!-- Vegetable Seller -->
+								</div>
+								<h2><a href="service-list.html?category=Vegetable Seller">Vegetable Seller</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-bolt"></i> <!-- Electrician -->
+								</div>
+								<h2><a href="service-list.html?category=Electrician">Electrician</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-wrench"></i> <!-- Plumber -->
+								</div>
+								<h2><a href="service-list.html?category=Plumber">Plumber</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-hammer"></i> <!-- Carpenter -->
+								</div>
+								<h2><a href="service-list.html?category=Carpenter">Carpenter</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-paint-roller"></i> <!-- Painter -->
+								</div>
+								<h2><a href="service-list.html?category=Painter">Painter</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-broom"></i> <!-- House Cleaning Service -->
+								</div>
+								<h2><a href="service-list.html?category=House Cleaning Service">House Cleaning Service</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-tshirt"></i> <!-- Laundry Service -->
+								</div>
+								<h2><a href="service-list.html?category=Laundry Service">Laundry Service</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-shopping-basket"></i> <!-- Grocery Delivery -->
+								</div>
+								<h2><a href="service-list.html?category=Grocery Delivery">Grocery Delivery</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-utensils"></i> <!-- Tiffin/Meal Delivery -->
+								</div>
+								<h2><a href="service-list.html?category=Tiffin/Meal Delivery">Tiffin/Meal Delivery</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-user"></i> <!-- Maid/Househelp -->
+								</div>
+								<h2><a href="service-list.html?category=Maid/Househelp">Maid/Househelp</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-seedling"></i> <!-- Gardener -->
+								</div>
+								<h2><a href="service-list.html?category=Gardener">Gardener</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-gas-pump"></i> <!-- Gas Cylinder Delivery -->
+								</div>
+								<h2><a href="service-list.html?category=Gas Cylinder Delivery">Gas Cylinder Delivery</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-mug-hot"></i> <!-- Milk Delivery -->
+								</div>
+								<h2><a href="service-list.html?category=Milk Delivery">Milk Delivery</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-paw"></i> <!-- Pet Care (Grooming, Walking) -->
+								</div>
+								<h2><a href="service-list.html?category=Pet Care">Pet Care </a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-car"></i> <!-- Driver on Hire -->
+								</div>
+								<h2><a href="service-list.html?category=Driver on Hire">Driver on Hire</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-mobile-alt"></i> <!-- Mobile Repair Technician -->
+								</div>
+								<h2><a href="service-list.html?category=Mobile Repair Technician">Mobile Repair Technician</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-fan"></i> <!-- AC Repair & Maintenance -->
+								</div>
+								<h2><a href="service-list.html?category=AC Rep/Maintenance">AC Rep/Maintenance</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-tv"></i> <!-- TV/DTH Installation and Repair -->
+								</div>
+								<h2><a href="service-list.html?category=TV/DTH Technician">TV/DTH Technician</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-tools"></i> <!-- Appliance Repair (Fridge, Washing Machine, etc.) -->
+								</div>
+								<h2><a href="service-list.html?category=Appliance Technician">Appliance Technician</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-book-open"></i> <!-- Home Tutor -->
+								</div>
+								<h2><a href="service-list.html?category=Home Tutor">Home Tutor</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-box"></i> <!-- Packers and Movers -->
+								</div>
+								<h2><a href="service-list.html?category=Packers and Movers">Packers and Movers</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-spa"></i> <!-- Beautician at Home -->
+								</div>
+								<h2><a href="service-list.html?category=Beautician at Home">Beautician at Home</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-cut"></i> <!-- Barber at Home -->
+								</div>
+								<h2><a href="service-list.html?category=Barber at Home">Barber at Home</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-car-side"></i> <!-- Car Wash Service -->
+								</div>
+								<h2><a href="service-list.html?category=Car Wash Service">Car Wash Service</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-motorcycle"></i> <!-- Bike/Car Mechanic -->
+								</div>
+								<h2><a href="service-list.html?category=Bike/Car Mechanic">Bike/Car Mechanic</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-recycle"></i> <!-- Waste Collection/Recycler -->
+								</div>
+								<h2><a href="service-list.html?category=MNC WASTE COLLETCOR">MNC WASTE COLLETCOR</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-shipping-fast"></i> <!-- Courier Pickup Service -->
+								</div>
+								<h2><a href="service-list.html?category=Courier Pickup Service">Courier Pickup Service</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-shoe-prints"></i> <!-- Shoe Repair/Cobbler -->
+								</div>
+								<h2><a href="service-list.html?category=Shoe Repair/Cobbler">Shoe Repair/Cobbler</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-scissors"></i> <!-- Tailoring Service -->
+								</div>
+								<h2><a href="service-list.html?category=Tailoring Service">Tailoring Service</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="fas fa-pencil-alt"></i> <!-- Stationary -->
+								</div>
+								<h2><a href="service-list.html?category=stationary">stationary</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>																														
+					</ul>
+				</div>
+			</div><!--/.container-->
+		</section>
+		<!--list-topics end -->
+	
 
-<!--list-topics start -->
-<section id="list-topics" class="list-topics">
-    <div class="container">
-        <div class="list-topics-content">
-            <ul>
-                <li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-restaurant"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=restaurant">Restaurant</a></h2>
-                        <p>150 listings</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-travel"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=destination">Destination</a></h2>
-                        <p>214 listings</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-building"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=hotel">Hotels</a></h2>
-                        <p>185 listings</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-pills"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=healthcare">Healthcare</a></h2>
-                        <p>200 listings</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-transport"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=automotive">Automotive</a></h2>
-                        <p>120 listings</p>
-                    </div>
-                </li>
-				<li>
-                    <div class="single-list-topics-content">
-                        <div class="single-list-topics-icon">
-                            <i class="flaticon-pills"></i>
-                        </div>
-                        <h2><a href="service-list.html?category=medical_service">medical_service</a></h2>
-                        <p>200 listings</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><!--/.container-->
-</section>
-<!--list-topics end -->
-
+		<!-- JavaScript code for search functionality -->
+		<script>
+			// Function to handle the search logic with OR condition
+			function handleSearch() {
+				// Get the input values
+				let serviceInput = document.getElementById('serviceInput').value.toLowerCase();
+				let locationInput = document.getElementById('locationInput').value.toLowerCase();
+	
+				// Get the list of service categories
+				let categories = document.querySelectorAll('.list-topics ul li');
+	
+				// Iterate through each category
+				categories.forEach(function (category) {
+					let categoryName = category.querySelector('h2 a').innerText.toLowerCase();
+					let categoryLocation = category.querySelector('p').innerText.toLowerCase(); // Assume location is stored in <p> tag
+	
+					// Check if either the service or location matches the input
+					if ((serviceInput && categoryName.includes(serviceInput)) || (locationInput && categoryLocation.includes(locationInput))) {
+						category.style.display = 'block';  // Show category if either matches
+					} else {
+						category.style.display = 'none';   // Hide category if neither matches
+					}
+				});
+			}
+	
+			// Attach the search function to the button
+			document.querySelector('.welcome-hero-btn').addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent form from submitting
+				handleSearch();         // Call the search function
+			});
+		</script>
+	
 
 		<!--works start -->
 		<section id="works" class="works">
